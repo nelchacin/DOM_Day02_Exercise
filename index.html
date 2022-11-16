@@ -28,18 +28,18 @@
     </p>
     <p>Seleccione unas dimensiones para la caja:</p>
     <form>
-        <input type="radio" id="diminutaCheck" name="checkbox" value="tamañoDiminuto">
+        <input class="size" type="radio" id="diminutaCheck" name="checkbox" value="tamañoDiminuto">
         <label for="diminutaCheck">Diminuta</label><br>
-        <input type="radio" id="medianoCheck" name="checkbox" value="tamañoMediano">
+        <input class="size" type="radio" id="medianoCheck" name="checkbox" value="tamañoMediano">
         <label for="medianoCheck">Mediano</label><br>
-        <input type="radio" id="grandeCheck" name="checkbox" value="tamañoGrande">
+        <input class="size" type="radio" id="grandeCheck" name="checkbox" value="tamañoGrande">
         <label for="fibra">Grande</label>
     </form>
     <p>Comentarios:</p>
-    <textarea name="" id="" cols="30" rows="5"></textarea>
+    <textarea name="" id="comments" cols="30" rows="5"></textarea>
     <p>
-    <button>Enviar</button>
-    <input type="text">
+    <button class="send">Enviar</button>
+    <input id="result" type="text" size="90">
     </p>
 
     <script src="./main.js"></script>

@@ -18,9 +18,24 @@
 
 //---------------EJERCICIO 1---------------------
 const inputName = document.querySelector("#nombreCliente")
-const inputMadera = document.querySelector("#materialMadera")
-const inputHierro = document.querySelector("#materialHierro")
 const materialSelection = document.querySelector("#materialSeleccion")
+const sizeSelection = document.querySelectorAll(".size")
+const inputTextArea = document.querySelector("#comments")
+const inputResult = document.querySelector("#result")
+const buttonSend = document.querySelector(".send")
+
+
+buttonSend.onclick = () => {
+    let inputNameValue = inputName.value
+    let materialSelectionValue = materialSelection.value
+    let sizeSelectionValue = sizeSelection.value
+    let inputTextAreaValue = inputTextArea.value
+
+
+    inputResult.value = `${inputNameValue} ha pedido una caja de ${materialSelectionValue} con unas dimensiones ${sizeSelectionValue}.${inputTextAreaValue}.`
+}
+
+
 
 
 
